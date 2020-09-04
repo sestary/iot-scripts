@@ -73,7 +73,7 @@ def set_zone_state(zone):
 host          = os.environ["MQTT_HOST"]
 port          = os.environ["MQTT_PORT"]
 clean_session = True
-client_id     = "pi1"
+client_id     = os.environ["MQTT_CLIENT_ID"]
 user_name     = os.environ["MQTT_USER"]
 password      = os.environ["MQTT_PASSWORD"]
 
